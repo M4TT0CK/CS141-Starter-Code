@@ -1,0 +1,25 @@
+{
+  "tests": [
+    {
+      "name": "Compiles without error",
+      "setup": "javac Main.java",
+      "run": "true",
+      "input": "",
+      "expected_output": "",
+      "comparison": "exact",
+      "timeout": 10
+    },
+    {
+      "name": "Produces numeric output",
+      "setup": "javac Main.java",
+      "run": "java Main",
+      "input": "10\n3\n",
+      "expected_output": "Addition",
+      "comparison": "contains",
+      "timeout": 10
+    }
+  ],
+  "environment": {
+    "language": "java"
+  }
+}
